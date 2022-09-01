@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void getSubsetsOfLenK(char *characters, int n, int k, string subsets) {
+void getSubsetsOfLenK(int indx, char *characters, int n, int k, string subsets) {
     // abcd , k = 2
     // aa, bb, cc, dd, ab, ac, ad, ba, bc, bd, ca, cb, cd, da, db, dc
     // permutation
@@ -18,7 +18,9 @@ void getSubsetsOfLenK(char *characters, int n, int k, string subsets) {
         // push a
         // subsets += characters[i];
         // call k - 1 = 1
-        getSubsetsOfLenK(characters, n, k - 1, subsets + characters[i]);
+        if(i == indx) 
+            continue;
+        getSubsetsOfLenK(i, characters, n, k - 1, subsets + characters[i]);
         // subsets.pop_back();
     }
 
@@ -46,5 +48,5 @@ int main()
     cin >> k;
 
     string ans;
-    getSubsetsOfLenK(characters, n, k, ans);
+    getSubsetsOfLenK(-1,characters, n, k, ans);
 }
