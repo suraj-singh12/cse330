@@ -1,4 +1,4 @@
-// check the  number is divisilbe by all the prime factors of another number
+// check the  number is divisible by all the prime factors of another number
 // given n; check if n is divisible by all prime factors of m
 #include <iostream>
 

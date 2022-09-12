@@ -86,6 +86,7 @@ int main()
 {
     string str = "235813";
     str = "213242751";
+    str = "1011235";
     cout << isAdditiveSequence(str) << endl;
     return 0;
 }

@@ -5,18 +5,8 @@
 #include <iostream>
 using namespace std;
 
-// 
-int noOfTiles(int m, int n, int tiles = 0) {
-    if(m == 0 || n == 0) return tiles;
-
-    int i = 0;
-    int minimum = min(m, n);
-    while((1 << i) < minimum) i++;
-
-    m -= (1<<i);
-    n -= (1<<i);
-
-    return noOfTiles(m, n, tiles + 1);
+int noOfTiles(int n, int m) {
+    
 }
 
 int main()
