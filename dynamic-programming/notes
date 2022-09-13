@@ -1,0 +1,26 @@
+dp is just optimization of recursion.
+
+Fibonacci
+Fib(n) : Fib(n - 1) + Fib(n - 2)
+
+Fib(10)
+Fib(9) + Fib(8)
+Fib(8) + Fib(7) + Fib(7) + Fib(6)
+Fib(7) + Fib(6) + Fib(6) + Fib(5) + Fib(6) + Fib(5) + Fib(5) + Fib(4)
+Fib(6) + Fib(5) + Fib(5) + Fib(4) + Fib(5) + Fib(4) + Fib(4) + Fib(3) + Fib(5) + Fib(4) + Fib(4) + Fib(3) + Fib(4) + Fib(3) + Fib(3) + Fib(2)
+
+clearly, recursion is calculating the same values repeatedly many times. : TC : O(2^n)
+so here optimization is possible
+so we use memoization (storing the calculated values in an array) : so TC: O(n)
+this is Dynamic Programming
+
+tabulation : bottom up
+memoization : top down
+both are similar 
+0 1 1 2 3 5 8 13 21 34 ...
+n = 1 ; ans = 1
+n = 2; ans = 1
+n = 3; ans  = 2
+n = 4; ans = 3
+
+5-> 4, 3 : 4
