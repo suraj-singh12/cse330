@@ -4,11 +4,11 @@ using namespace std;
 int main()
 {
     string str = "abcdefghi";
-    cout << str.substr(0,0) << endl;
+    cout << str.substr(0,1) << endl;
     cout << str.substr(1,1) << endl;
-    cout << str.substr(2,2) << endl;
     cout << str.substr(2) << endl;
-    cout << to_string(534) << endl;
+    // cout << str.substr(2) << endl;
+    // cout << to_string(534) << endl;
     return 0;
 }
 
